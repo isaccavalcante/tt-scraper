@@ -1,0 +1,14 @@
+requests[security]==2.18.1
+lxml
+flask
+bs4
+pillow
+xvfbwrapper==0.2.9
+pymongo==3.5.1
+flask-cors
+flask-restful
+sinesp-client
+numpy
+opencv-python
+pyslibtesseract
+pypdf2
