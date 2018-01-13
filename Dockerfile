@@ -45,7 +45,7 @@ RUN pip3 install --upgrade pip && pip3 install -r requirements.txt
 
 RUN pip3 install dryscrape
 
-RUN git clone https://github.com/brunomacabeusbr/pyslibtesseract.git \
+RUN git clone https://github.com/isaccavalcante/pyslibtesseract.git \
     && cd pyslibtesseract \
     && cd src/cppcode/ \
     && cmake . \ 
