@@ -34,7 +34,12 @@ RUN apt-get install -y \
     libfreetype6 \
     libleptonica-dev \
     libtesseract-dev  \
-    imagemagick
+    imagemagick \
+    openvpn \
+    zip \
+    unzip \
+    nano \
+    vim 
 
 RUN pip3 install --upgrade pip && pip3 install -r requirements.txt 
 
@@ -48,6 +53,8 @@ RUN git clone https://github.com/brunomacabeusbr/pyslibtesseract.git \
     && cd ../.. \
     && python3 setup.py install  
 
-RUN wget https://github.com/tesseract-ocr/tessdata/raw/master/eng.traineddata
+RUN mkdir tessdata \
+    && cd tessdata \
+    && wget https://github.com/tesseract-ocr/tessdata/raw/master/eng.traineddata
 
 ENV TESSDATA_PREFIX="/app"
