@@ -8,7 +8,8 @@ ADD requirements.txt /app
 RUN apt update \
     && apt-get install -y \
     software-properties-common \
-    wget
+    wget \
+    curl
 
 RUN add-apt-repository ppa:jonathonf/python-3.6 -y \
     && apt-get update \
