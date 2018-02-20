@@ -41,7 +41,8 @@ RUN apt-get install -y \
     unzip \
     nano \
     vim \
-    pdftohtml 
+    pdftohtml \
+    locales
 
 RUN pip3 install --upgrade pip && pip3 install -r requirements.txt 
 
